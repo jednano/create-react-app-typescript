@@ -1463,19 +1463,19 @@ By default, the `package.json` of the generated project looks like this:
 
 ```js
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom"
 ```
 
 If you know that none of your tests depend on [jsdom](https://github.com/tmpvar/jsdom), you can safely remove `--env=jsdom`, and your tests will run faster:
 
 ```diff
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
--   "test": "react-scripts test --env=jsdom"
-+   "test": "react-scripts test"
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+-   "test": "react-scripts-ts test --env=jsdom"
++   "test": "react-scripts-ts test"
 ```
 
 To help you make up your mind, here is a list of APIs that **need jsdom**:
@@ -1566,7 +1566,7 @@ Then, add these scripts to your `package.json`:
    "scripts": {
 +    "styleguide": "styleguidist server",
 +    "styleguide:build": "styleguidist build",
-     "start": "react-scripts start",
+     "start": "react-scripts-ts start",
 ```
 
 Then, run the following command inside your app’s directory:

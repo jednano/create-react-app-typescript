@@ -1266,7 +1266,7 @@ Since 0.3.0 added a test runner, we recommend that you add it to the `scripts` s
   // ...
   "scripts": {
     // ...
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts-ts test --env=jsdom"
   }
 ```
 
